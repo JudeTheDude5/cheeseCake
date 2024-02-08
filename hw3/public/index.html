@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="stylesheets/cheeseC.css">
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"/>
+ </script>
+<script src="javascripts/stuff.js"></script>
+</head>
+<body>
+
+<!-- Jude Reynolds -->
+
+<h1>Cheesecake Order Form</h1>
+
+<!-- Head of Page and Cheesecake image -->
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg/1280px-Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg" alt="Cheesecake image" width="200" height="200">
+
+<p id="quantity">Quantity Topping</p>
+
+<!-- Table Containing option dropdown and radio input for quantity of toppings -->
+
+<table class="center">
+<tr>
+	<td>
+	<label for="quantity"></label>
+	<select class="quantity" style="background-color:LightGray;" id="quantity">
+		<option value="One">1</option>
+		<option value="Two">2</option>
+		<option value="Three">3</option>
+	</select>	
+	</td>
+
+	<td>
+	<form id="radio1">
+		<input type="radio" id="plain" name="topping_choice" value="Plain">
+		<label for="plain">Plain</label><br>
+		<input type="radio" id="cherry" name="topping_choice" value="Cherry">
+		<label for="cherry">Cherry</label><br>
+		<input type="radio" id="chocolate" name="topping_choice" value="Chocolate">
+		<label for="chocolate">Chocolate</label><br>
+	</form>
+	</td>
+</tr>
+
+</table>
+
+<!-- text area and button for extra notes about order -->
+
+<p id="noteHead">Notes</p>
+<form action="" id ="note">
+<textarea style="color:Gray;" id="notes1" name="notes" rows="4" cols="50">
+Enter Any Special Instructions Here</textarea><br><br>
+<input id="order" type="submit" value="Order"><br>
+
+</form>
+
+<h3>Orders for 
+<div class="dropdown">
+	<button class="dropbtn"> Jan </button>
+	<div class="dropdown-content">
+	<a href="#" id="Jan">Jan</a>
+	<a href="#" id="Feb">Feb</a>
+	<a href="#" id="Mar">Mar</a>
+	<a href="#" id="Apr">Apr</a>
+	<a href="#" id="May">May</a>
+	<a href="#" id="Jun">Jun</a>
+	<a href="#" id="Jul">Jul</a>
+	<a href="#" id="Aug">Aug</a>
+	<a href="#" id="Sep">Sep</a>
+	<a href="#" id="Oct">Oct</a>
+	<a href="#" id="Nov">Nov</a>
+	<a href="#" id="Dec">Dec</a>
+	
+	</div>
+</div>
+</h3>
+
+<!-- Dropdown Menu -->
+
+
+<!-- Total Orders list -->
+
+
+<ul>
+  <li>11 Cherry</li>
+  <li>17 Chocolate</li>
+  <li>31 Plain</li>
+</ul>
+
+
+</body>
+</html>
